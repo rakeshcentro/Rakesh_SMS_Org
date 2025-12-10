@@ -1,0 +1,11 @@
+﻿# Ignore OS files
+Thumbs.db
+Desktop.ini
+
+# Ignore build/output folders
+bin/
+obj/
+node_modules/
+dist/
+*.log
+*.tmp
