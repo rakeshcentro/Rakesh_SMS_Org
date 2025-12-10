@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/join_via_link_nav_graph" app:startDestination="@id/join_via_link_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.google.android.apps.messaging.joinvialink.JoinViaLinkFragment" android:id="@id/join_via_link_fragment" />
+    <fragment android:name="com.google.android.apps.messaging.joinvialink.qrcode.QrCodeFragment" android:id="@id/qr_code_fragment" />
+</navigation>

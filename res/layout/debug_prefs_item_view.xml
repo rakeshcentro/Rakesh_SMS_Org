@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.messaging.ui.debug.DebugPrefsItemView android:gravity="center_vertical" android:orientation="vertical" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textSize="14.0sp" android:gravity="end" android:id="@id/text_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+</com.google.android.apps.messaging.ui.debug.DebugPrefsItemView>

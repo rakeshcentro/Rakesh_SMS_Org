@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="325.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/rich_cards_consent_locations_illustration" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <TextView android:textAppearance="?textAppearanceSubhead1" android:textColor="?colorOnSurface" android:id="@id/zero_state_search_rich_cards_opt_in_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/zero_state_search_rich_cards_opt_in_banner_title" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:textSize="@dimen/zero_state_search_rich_cards_opt_in_banner_summary_font_size" android:textColor="?colorOnSurfaceVariant" android:id="@id/zero_state_search_rich_cards_opt_in_dialog_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="8.0dip" android:minHeight="@dimen/accessibility_min_height_target" android:text="@string/zero_state_search_rich_cards_opt_in_banner_text" android:lineSpacingMultiplier="@dimen/H5_spacing_multiplier" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+    </LinearLayout>
+</ScrollView>

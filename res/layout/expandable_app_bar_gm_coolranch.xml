@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.messaging.samsung.appbar.ModifiedScrollingAppBarView android:id="@id/toolbarLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:liftOnScroll="false" style="@style/ExpandableAppBarStyleCoolRanch"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.messaging.samsung.appbar.ExpandableAppBarView android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentScrim="?colorSurfaceContainer" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" app:statusBarScrim="?colorSurfaceContainer" app:titleEnabled="false" app:toolbarId="@id/toolbar">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/big_lockup_gm" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_collapseMode="parallax">
+            <com.google.android.libraries.material.productlockup.ProductLockupView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" android:text="@string/app_name_full" android:scaleX="1.4" android:scaleY="1.4" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/toolbar_gm_coolranch" />
+        </FrameLayout>
+    </com.google.android.apps.messaging.samsung.appbar.ExpandableAppBarView>
+</com.google.android.apps.messaging.samsung.appbar.ModifiedScrollingAppBarView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/border_bottom" android:top="-2.0dip">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/linkpreview_border_stroke_width" android:color="?colorOutlineVariant" />
+            <corners android:bottomLeftRadius="20.0dip" android:bottomRightRadius="20.0dip" />
+        </shape>
+    </item>
+</layer-list>

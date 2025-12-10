@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout android:id="@id/advanced_feedback_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/toolbar" />
+</android.support.constraint.ConstraintLayout>

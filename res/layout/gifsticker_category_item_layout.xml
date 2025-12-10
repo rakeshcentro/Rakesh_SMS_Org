@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/gifsticker_category_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.compose.ui.views.RoundedImageView android:id="@id/gifsticker_category_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selectableItemBackground" android:scaleType="centerCrop" app:cornerRadius="@dimen/standard_corner_radius" />
+    <TextView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/gifsticker_category_label" android:background="@drawable/compose_bottom_rounded_scrim" android:layout_width="fill_parent" android:layout_height="@dimen/gifsticker_category_label_height" style="@style/GifStickerCategoryLabel" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/tinted_quantum_ic_search_24" android:id="@id/location_attachment_picker_menu_search" android:title="@string/search_hint" appcompat:actionViewClass="com.google.android.apps.messaging.ui.common.BugleSearchView" appcompat:showAsAction="collapseActionView|ifRoom" />
+</menu>

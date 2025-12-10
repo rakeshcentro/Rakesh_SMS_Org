@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/photo_picker_collection_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?android:selectableItemBackground" android:contentDescription="@string/op3_nameless_cluster_photo_content_description" />
+    <View android:id="@id/photo_picker_suggested_collection_gradient" android:background="@drawable/photo_picker_art_collection_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubhead2" android:textColor="@color/google_white" android:ellipsize="end" android:gravity="start|bottom|center" android:layout_gravity="start|bottom|center" android:id="@id/photo_picker_collection_name" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:singleLine="false" android:shadowColor="@color/photo_picker_drop_shadow" android:shadowRadius="5.0" android:paddingHorizontal="16.0dip" />
+</FrameLayout>

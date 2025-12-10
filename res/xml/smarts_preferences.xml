@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent" android:orderingFromXml="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/p2p_conversation_suggestions_preference_title" android:key="@string/p2p_conversation_suggestions_enabled_pref_key" android:order="3" android:defaultValue="@bool/p2p_conversation_suggestions_enabled_pref_default" app:allowDividerAbove="true" />
+    <Preference android:persistent="false" android:layout="@layout/empty_preference" android:key="@string/smart_reply_suggestion_example_divider_key" android:order="5" />
+    <SwitchPreferenceCompat android:persistent="true" android:key="@string/mc_enabled_pref_key" android:order="10" android:defaultValue="@bool/mc_enabled_pref_default" app:allowDividerAbove="true" />
+    <com.google.android.apps.messaging.ui.appsettings.ExperimentBadgePreference android:persistent="false" android:layout="@layout/experimental_setting_badge" android:selectable="false" android:key="@string/experiment_badge_pref_key" android:order="11" />
+    <Preference android:persistent="false" android:key="@string/ds_setting_key" android:order="12" app:allowDividerAbove="true" />
+    <PreferenceScreen android:persistent="false" android:title="@string/smart_action_settings_page_title" android:key="@string/smart_action_settings_parent_pref" android:summary="@string/smart_action_settings_page_description" android:order="13" app:allowDividerAbove="true" />
+    <SwitchPreferenceCompat android:persistent="true" android:title="@string/suggested_stickers_preference_title" android:key="@string/suggested_stickers_enabled_pref_key" android:summary="@string/suggested_stickers_preference_summary" android:order="14" android:defaultValue="@bool/suggested_stickers_enabled_pref_default" app:allowDividerAbove="true" />
+    <PreferenceScreen android:persistent="false" android:title="@string/nudge_settings_page_title" android:key="@string/nudge_settings_parent_pref" android:summary="@string/nudge_settings_page_description" android:order="15" app:allowDividerAbove="true" />
+    <Preference android:persistent="false" android:layout="@layout/empty_preference" android:key="@string/smart_action_example_divider_key" android:order="16" />
+    <Preference android:persistent="false" android:layout="@layout/learn_more_preference" android:selectable="true" android:key="@string/smarts_learn_more_pref_key" android:order="17" app:allowDividerAbove="true" />
+</PreferenceScreen>

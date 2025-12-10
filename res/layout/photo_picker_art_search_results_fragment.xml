@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/photo_picker_search_results_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/photo_picker_search_results_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:navigationContentDescription="@string/abc_action_bar_up_description" app:titleMarginStart="0.0dip" app:titleTextAppearance="@style/TextAppearance.GoogleMaterial.OpenSearchBar" style="@style/Widget.GoogleMaterial.OpenSearchView.Toolbar" />
+        <View android:id="@id/search_results_view_divider" android:background="?colorOnSurfaceInverse" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/photo_picker_loading_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" app:indicatorColor="?colorPrimaryGoogle" app:indicatorSize="4.0dip" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/photo_picker_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/photo_picker_art_search_result_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="26.0dip">
+            <com.google.android.libraries.user.profile.photopicker.art.view.ArtImageGridView android:id="@id/photo_picker_top_results_grid_images" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+            <com.google.android.libraries.user.profile.photopicker.art.home.view.CategoriesSectionView android:id="@id/photo_picker_categories" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+            <com.google.android.libraries.user.profile.photopicker.art.view.ArtImageGridView android:id="@id/photo_picker_more_results_grid_images" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include layout="@layout/photo_picker_art_search_no_results" />
+    <com.google.android.libraries.user.profile.photopicker.common.view.error.FullscreenErrorView android:id="@id/photo_picker_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

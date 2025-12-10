@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/reaction_picker_fragment_background_v2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" android:fontFamily="@font/google_sans_medium" android:paddingVertical="24.0dip" />
+    <FrameLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/reaction_hugo_anchor" android:background="@drawable/reaction_picker_fragment_background_v2" android:paddingTop="0.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+        <requestFocus />
+    </FrameLayout>
+</LinearLayout>

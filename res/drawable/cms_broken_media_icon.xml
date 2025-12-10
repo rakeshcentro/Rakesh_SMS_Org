@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="36.0dip" android:width="36.0dip" />
+            <solid android:color="?colorOnSurfaceVariant" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:id="@id/cms_broken_media_icon_layer" android:height="30.0dip" android:width="30.0dip" android:drawable="@drawable/quantum_gm_ic_error_outline_vd_theme_24" />
+</layer-list>

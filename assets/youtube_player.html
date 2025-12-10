@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <!-- Avoid a network request to fetch a favicon. -->
+  <link rel="icon" href="data:,"/>
+  <style>
+    html {
+      overflow: hidden;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+    }
+    body {
+      overflow: hidden;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #player iframe,
+    #player object,
+    #player embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  </style>
+</head>
+<body>
+<div id="player"></div>
+<script>
+  var tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+
+  function onYouTubeIframeAPIReady() {
+    startListeningToMessagesFromNative();
+    postWebMessage({
+      event: "onInitialize",
+    });
+  }
+
+  function onReady(event) {
+    postWebMessage({
+      event: "onReady",
+    });
+  }
+
+  function onStateChange(event) {
+    postWebMessage({
+      event: "onStateChange",
+      videoId: getCurrentVideoIdOrNull(),
+      stateCode: event.data,
+      currentTime: event.target.getCurrentTime(),
+    });
+  }
+
+  function onError(event) {
+    postWebMessage({
+      event: "onError",
+      videoId: getCurrentVideoIdOrNull(),
+      errorCode: event.data,
+      currentTime: event.target.getCurrentTime(),
+    });
+  }
+
+  function onFullscreenToggled(event) {
+    postWebMessage({
+      event: "onFullscreenToggled",
+    });
+  }
+
+  function createPlayer(messageData) {
+    player = new YT.Player("player", {
+      width: "100%",
+      height: "100%",
+      playerVars: {
+        controls: 1,
+        external_fullscreen: 1,
+        embedConfig: {
+          enc: messageData.embedToken,
+        }
+      },
+      events: {
+        onReady: onReady,
+        onStateChange: onStateChange,
+        onError: onError,
+        onFullscreenToggled: onFullscreenToggled,
+      },
+    });
+  }
+
+  function load(messageData) {
+    player.loadVideoById(messageData.videoId, messageData.startTime);
+  }
+
+  function play(messageData) {
+    if (messageData.videoId == getCurrentVideoIdOrNull()) {
+      player.playVideo();
+    }
+  }
+
+  function pause(messageData) {
+    if (messageData.videoId == getCurrentVideoIdOrNull()) {
+      player.pauseVideo();
+    }
+  }
+
+  function setFullscreen(messageData) {
+    player.setFauxFullscreen(messageData.isFullscreen);
+    if (messageData.isFullscreen) {
+      player.showControls();
+      player.wakeUpControls();
+    } else {
+      player.hideControls();
+    }
+  }
+
+  function postWebMessage(messageObject) {
+    try {
+      messagingChannel.postMessage(JSON.stringify(messageObject));
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  function startListeningToMessagesFromNative() {
+    messagingChannel.onmessage = (message) => {
+      let messageData = JSON.parse(message.data);
+      switch (messageData.event) {
+        case "createPlayer":
+          createPlayer(messageData);
+          break;
+        case "load":
+          load(messageData);
+          break;
+        case "play":
+          play(messageData);
+          break;
+        case "pause":
+          pause(messageData);
+          break;
+        case "setFullscreen":
+          setFullscreen(messageData);
+          break;
+      }
+    };
+  }
+
+  function getCurrentVideoIdOrNull() {
+    try {
+      return player.getVideoData().video_id;
+    } catch (error) {
+      return null;
+    }
+  }
+</script>
+</body>
+</html>

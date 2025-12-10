@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/media_editor_text_darken_view" android:background="@color/text_darken_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <EditText android:textAppearance="?textAppearanceSubhead1" android:textSize="30.0sp" android:textColor="@color/swatch_white" android:gravity="center" android:id="@id/media_editor_edit_text" android:background="@null" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="6" android:inputType="textLongMessage|textMultiLine|textNoSuggestions" android:imeOptions="flagNoExtractUi" android:importantForAccessibility="no" android:importantForAutofill="no" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

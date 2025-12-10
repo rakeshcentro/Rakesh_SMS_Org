@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="conversation_message_photo_min_height">229.0dip</dimen>
+</resources>

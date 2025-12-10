@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.google.android.apps.messaging.ui.util.InsetAwareConstraintLayout android:id="@id/conversation_and_compose_container_split_view" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/conversation_list_root_container" android:fitsSystemWindows="true" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_default="percent" app:layout_constraintWidth_percent="@dimen/split_view_width_percent_coolranch" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/conversation_container_background" android:fitsSystemWindows="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintWidth_default="percent" app:layout_constraintWidth_percent="@dimen/split_view_width_percent_coolranch">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/conversation_root_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/toolbar_conversation" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.google.android.apps.messaging.ui.util.InsetAwareConstraintLayout>
+</merge>

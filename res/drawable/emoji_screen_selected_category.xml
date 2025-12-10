@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/emoji_tab_min_width" android:width="@dimen/emoji_tab_min_width" />
+            <corners android:radius="@dimen/emoji_tab_corner_radius" />
+            <solid android:color="?colorSecondaryContainer" />
+        </shape>
+    </item>
+</layer-list>

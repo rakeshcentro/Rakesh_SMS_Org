@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:divider="@drawable/divider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/message_list_padding" android:paddingEnd="@dimen/message_list_padding">
+        <CheckBox android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/parent_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:drawablePadding="16.0dip" android:layout_weight="1.0" android:insetTop="0.0dip" android:insetBottom="0.0dip" android:drawableStart="@android:color/transparent" style="@style/CheckBoxStyle" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/selected_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/message_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider" android:showDividers="middle" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="@dimen/proxy_screen_search_bar_vertical_padding" android:insetBottom="@dimen/proxy_screen_search_bar_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <solid android:color="?android:colorBackground" />
+        <stroke android:width="0.5dip" android:color="?colorHairline" />
+        <corners android:radius="40.0dip" />
+    </shape>
+</inset>

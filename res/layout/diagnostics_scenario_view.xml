@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_touch_target_size" android:layout_marginStart="16.0dip" class="com.google.android.apps.messaging.diagnostics.ui.DiagnosticsScenarioView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/enable_scenario_checkbox" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/CheckBoxStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <TextView android:id="@id/diagnostics_scenario_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DiagnosticsScenarioViewScenarioNameStyle" />
+        <TextView android:id="@id/diagnostics_scenario_status" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DiagnosticsScenarioViewTextStyle" />
+    </LinearLayout>
+</view>

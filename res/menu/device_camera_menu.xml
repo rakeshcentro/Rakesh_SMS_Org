@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@null" android:id="@id/take_photo" android:title="@string/device_default_camera_take_photo" />
+    <item android:icon="@null" android:id="@id/record_video" android:title="@string/device_default_camera_record_video" />
+</menu>

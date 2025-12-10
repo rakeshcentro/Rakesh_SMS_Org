@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:tag=".expression-category-item-tablet" android:background="@drawable/bg_expression_category_container" android:layout_width="fill_parent" android:layout_height="36.0dip" style="@style/EmojiPickerCategoryContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="start|center" android:id="@id/emoji_picker_header_icon" android:scaleType="centerInside" style="@style/TabletExpressionCategoryLargeIcon" />
+    <TextView android:ellipsize="marquee" android:id="@id/emoji_picker_header_text" style="@style/TabletExpressionCategoryText" />
+</LinearLayout>

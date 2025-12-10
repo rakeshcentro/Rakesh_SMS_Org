@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chip app:chipBackgroundColor="?colorSurfaceContainer" app:chipStrokeColor="?colorSurfaceContainer" app:closeIconVisible="false" app:shapeAppearanceOverlay="?shapeAppearanceCornerExtraLargeIncreased" style="@style/Widget.GoogleMaterial3.Chip.Input" xmlns:app="http://schemas.android.com/apk/res-auto" />

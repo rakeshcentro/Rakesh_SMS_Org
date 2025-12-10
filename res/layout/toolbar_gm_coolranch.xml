@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.messaging.ui.toolbar.BugleToolbar android:theme="@style/BugleToolbar.Lockup" android:id="@id/toolbar" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:paddingStart="0.0dip" app:contentInsetStart="0.0dip" app:navigationIcon="@null" app:theme="@style/BugleToolbar.Lockup"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.material.productlockup.ProductLockupView android:id="@id/lockup_gm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name_full" android:transformPivotX="0.0dip" android:scaleX="0.96" android:scaleY="0.96" android:layout_marginStart="16.0dip" />
+</com.google.android.apps.messaging.ui.toolbar.BugleToolbar>

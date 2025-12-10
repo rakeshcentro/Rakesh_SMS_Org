@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/info_and_options_tab_contents_margin_start" android:insetRight="@dimen/info_and_options_tab_contents_margin_start"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <size android:height="1.0dip" />
+        <solid android:color="?colorOutlineVariant" />
+    </shape>
+</inset>

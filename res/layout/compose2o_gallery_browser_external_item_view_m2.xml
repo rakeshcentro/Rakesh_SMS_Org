@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.messaging.ui.mediapicker.c2o.gallery.GalleryBrowserExternalItemView android:gravity="center" android:orientation="vertical" android:background="@drawable/compose2o_tile_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gallery_external_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?colorPrimaryBrandIcon" android:importantForAccessibility="no" />
+    <TextView android:textColor="?colorOnSurface" android:orientation="vertical" android:id="@id/gallery_external_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/c2o_content_item_vertical_spacing_icon_text" android:src="@null" />
+</com.google.android.apps.messaging.ui.mediapicker.c2o.gallery.GalleryBrowserExternalItemView>

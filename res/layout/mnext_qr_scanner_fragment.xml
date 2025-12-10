@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/qr_scanner_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.messaging.ui.ditto.CameraSourcePreview android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.apps.messaging.ui.ditto.QrScannerOverlayView android:background="?colorBackgroundDark" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" android:alpha="0.5" app:centerHorizontal="true" app:squareGravity="bottom" app:squareSize="@dimen/qr_code_scanning_area_size" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <ImageView android:background="?colorBackgroundDark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" android:alpha="0.5" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/quantum_white_100" android:layout_gravity="center_horizontal" android:id="@id/qr_scanner_text_view" android:paddingTop="@dimen/qr_code_scanning_vertical_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qr_code_scanner_hint_text" android:textAlignment="center" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/qr_loading_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/qr_loading_overlay_background" android:background="?colorBackgroundDark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+        <ProgressBar android:id="@id/qr_loading_progress_bar" android:background="@color/google_transparent" android:paddingBottom="@dimen/qr_code_scanning_area_portrait_loading_spacing_bottom" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:indeterminateTint="@color/google_white" />
+        <TextView android:textColor="@color/bugle_color_text_white" android:id="@id/qr_loading_checkmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qr_success_text_view" android:drawableTop="@null" android:drawablePadding="@dimen/qr_code_scanning_area_success_text_spacing_top" android:layout_alignTop="@id/qr_loading_progress_bar" android:layout_centerHorizontal="true" android:accessibilityLiveRegion="polite" />
+    </RelativeLayout>
+</FrameLayout>

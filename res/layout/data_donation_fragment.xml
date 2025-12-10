@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/confirm_button_container" android:background="@drawable/confirm_button_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/confirm_button_container_height">
+        <Button android:enabled="false" android:layout_gravity="center" android:id="@id/confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:minHeight="48.0dip" android:text="@string/donation_donate_action_label" android:insetTop="0.0dip" android:insetBottom="0.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/progress_background" android:background="@color/primary_background_color" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no">
+        <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" app:trackColor="?colorPrimaryBrandIcon" />
+    </FrameLayout>
+</FrameLayout>

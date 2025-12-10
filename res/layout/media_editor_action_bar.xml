@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/exit_button" android:src="@drawable/editor_back_button" android:tint="?colorOnSurfaceDark" android:contentDescription="@string/exit_button_action" android:layout_marginStart="12.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ToolButton" />
+    <ImageButton android:id="@id/draw_button" android:src="@null" android:tint="?colorOnSurfaceDark" android:contentDescription="@string/draw_button_action" android:layout_marginEnd="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ToolButton" />
+    <ImageButton android:id="@id/text_button" android:src="@null" android:tint="?colorOnSurfaceDark" android:contentDescription="@string/text_button_action" app:layout_constraintEnd_toStartOf="@id/draw_button" app:layout_constraintTop_toTopOf="parent" style="@style/ToolButton" />
+</android.support.constraint.ConstraintLayout>

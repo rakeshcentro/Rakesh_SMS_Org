@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <inset android:insetLeft="@dimen/conversation_list_item_view_background_right_left_inset_coolranch" android:insetRight="@dimen/conversation_list_item_view_background_right_left_inset_coolranch" android:insetTop="@dimen/conversation_list_item_view_background_top_bottom_inset" android:insetBottom="@dimen/conversation_list_item_view_background_top_bottom_inset">
+            <ripple android:color="?colorControlHighlight">
+                <item android:id="@android:id/mask">
+                    <shape>
+                        <corners android:radius="@dimen/conversation_list_item_view_background_radius_coolranch" />
+                        <solid android:color="@color/white" />
+                    </shape>
+                </item>
+            </ripple>
+        </inset>
+    </item>
+</selector>

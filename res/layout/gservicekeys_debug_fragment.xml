@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <SearchView android:id="@id/search_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0" android:iconifiedByDefault="false" />
+        <Button android:id="@id/btn_dump_keys" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/dump_flags" android:layout_weight="2.0" />
+    </LinearLayout>
+    <View android:background="@color/google_blue_grey_50" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:dividerHeight="0.0px" android:layout_weight="1.0" />
+</LinearLayout>
